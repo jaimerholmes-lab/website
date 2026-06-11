@@ -73,5 +73,11 @@ button:hover {
 }
 
 .card:hover {
-    transform: translateY(-8px)
+    transform: rotate(-2deg) translateyY(-10);
+}
+
+.price {
+    font-family: cursive;
+    font-size: 1.5rem;
+    color: #ff69b4;
 }
