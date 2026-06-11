@@ -20,6 +20,7 @@ body {
     font-family: "Bitcount Single", system-ui;
     font-size: 5rem;
     margin-bottom: 10px;
+    color: #4a364f;
 }
 
 .hero p {
@@ -33,8 +34,8 @@ button {
     padding: 14px 32px;
     border: none;
     border-radius: 999px;
-    background: #ffb6c1;
-    color: white;
+    background: #f7a8c4;
+    color: #4a364f ;
     font-weight: 600;
     cursor: pointer;
     box-shadow: 0 10px 20px rgba(255,182,193,.3);
@@ -42,7 +43,8 @@ button {
 }
 
 button:hover {
-    transform: translate Y(-4px);
+    transform: translateY(-4px);
+    background: #e98aaf;
 }
 
 .fruit-row {
@@ -50,9 +52,22 @@ button:hover {
     font-size: 2rem;
 }
 
-.sparkles {
-    font-size: 1.5rem;
-    color: #ff8fab;
+.sparkels {
+    font-size: 1.3rem;
+    color: #e98aaf;
+    margin-bottom: 2rem;
+    letter-spacing: 0.5rem;
+    opacity: 0.9;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
 }
 
 .juices {
@@ -64,7 +79,8 @@ button:hover {
 }
 
 .card {
-    background: white;
+    background: #ddd8f2;
+    border: 2px solid #a8c9a0;
     width: 250px;
     padding: 25px;
     border-radius: 24px;
@@ -85,15 +101,15 @@ button:hover {
     color: #ff8bb5;
 }
 
-.card::after {
-    
-}
-
-
 .price {
     font-family: cursive;
     font-size: 1.5rem;
-    color: #ff69b4;
+    color: #e98aaf;
+}
+
+.price::after {
+    content:"♡";
+    color: #7a5a44;
 }
 
 footer {
@@ -103,16 +119,31 @@ footer {
 }
 
 .land {
-    padding: 4rem 2rem;
-    max-width: 800px;
     margin: auto;
     position: relative;
+    background: #f5f0e8;
+    border-top: 2px solid #a8c9a0;
+    border-bottom: 2px solid #a8c9a0;
 }   
+
+.land h3 {
+    color: #7a5a44;
+}
 
 
 .footer-banner {
     height: 80px;
-    background-image: url(./media/gingham.jpg);
-    background-size: 300px;
+    background:
+        linear-gradient(rgba(247,168,196,.4),
+        rgba(247,168,196,.4)),
+        url("./media/gingham.jpg");
+    background-size: 250px;
     background-repeat: repeat;
+    border-top: 6px dotted #a8c9a0;
 }
+
+footer p {
+    color: #4a364f;
+}
+
+
