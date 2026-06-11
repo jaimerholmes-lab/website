@@ -1,21 +1,46 @@
-h1 {
-    color: rgb(190, 24, 93); 
-    font-weight: 900; 
-    font-style: normal; 
-    font-size: 28px;
-}
-
-.nav-menu {
-    color: rgb(157, 23, 77); 
-    font-weight: 500; 
-    font-style: normal; 
-    font-size: 16px;
-    display: flex;
-    gap: 6;
-    text-align: right;
+body {
+    margin: 0;
+    background: #fff5f7;
+    font-family: 'Poppins', sans-serif;
+    color: #5e4b56;
+    font-family: "Share Tech", sans-serif;
 }
 
 .hero {
-    display: flex;
-    gap: 6;
+    min-height: 100vh;
+    text-align: center;
+    padding: 120px 20px;
+    background: 
+        radial-gradient(circle at top right,
+        #ffd6e0 0%,
+        transparent 35%);
+}
+
+.hero h1 {
+    font-family: "Bitcount Single", system-ui;
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    max-width: 500px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+button {
+    margin-top: 30px;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 999px;
+    background: #ffb6c1;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(255,182,193,.3);
+    transition: .3s;
+}
+
+button:hover {
+    transform: translate Y(-4px);
 }
