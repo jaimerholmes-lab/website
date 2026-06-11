@@ -1,0 +1,21 @@
+h1 {
+    color: rgb(190, 24, 93); 
+    font-weight: 900; 
+    font-style: normal; 
+    font-size: 28px;
+}
+
+.nav-menu {
+    color: rgb(157, 23, 77); 
+    font-weight: 500; 
+    font-style: normal; 
+    font-size: 16px;
+    display: flex;
+    gap: 6;
+    text-align: right;
+}
+
+.hero {
+    display: flex;
+    gap: 6;
+}
