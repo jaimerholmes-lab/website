@@ -44,3 +44,34 @@ button {
 button:hover {
     transform: translate Y(-4px);
 }
+
+.fruit-row {
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
+.sparkles {
+    font-size: 1.5rem;
+    color: #ff8fab;
+}
+
+.juices {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.card {
+    background: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25 px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px)
+}
