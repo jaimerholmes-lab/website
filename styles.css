@@ -27,6 +27,7 @@ body {
     max-width: 500px;
     margin: auto;
     font-size: 1.1rem;
+    margin-bottom: 30px;
 }
 
 button {
@@ -47,9 +48,30 @@ button:hover {
     background: #e98aaf;
 }
 
-.fruit-row {
+/* .fruit-row {
     margin-top: 50px;
     font-size: 2rem;
+} */
+
+.status {
+    display: inline-block;
+    margin-top: 100px;
+    padding: 8px 18px;
+    background: white;
+    border: 2px dashed #a8c9a0;
+    border-radius: 999px;
+    color: #7a5a44;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.04);
+    }
 }
 
 .sparkels {
@@ -79,7 +101,10 @@ button:hover {
 }
 
 .card {
-    background: #ddd8f2;
+    background: #fffaf7;
+    /* background: #fff8f2; */
+    /* background: #ddd8f2; */
+    position: relative;
     border: 2px solid #a8c9a0;
     width: 250px;
     padding: 25px;
@@ -110,6 +135,10 @@ button:hover {
 .price::after {
     content:"♡";
     color: #7a5a44;
+}
+
+#menu {
+    scroll-margin-top: 50px;
 }
 
 footer {
@@ -147,3 +176,101 @@ footer p {
 }
 
 
+.moodboard {
+    columns: 2;
+    gap: 15px;
+    padding: 40px;
+}
+
+.moodboard img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 16px;
+}
+
+.blue-ingredients {
+    font-size: .8rem;
+    color: #7a5a44;
+    border-top: 1px dashed #a8c9a0;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+.yellow-ingredients{
+    font-size: .8rem;
+    color: #7a5a44;
+    border-top: 1px dashed #a8c9a0;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.green-ingredients {
+    font-size: .8rem;
+    color: #7a5a44;
+    border-top: 1px dashed #a8c9a0;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.cute-nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 15px;
+
+    padding: 12px 20px;
+
+    background: rgba(255,255,255,.8);
+    backdrop-filter: blur(8px);
+
+    border: 2px solid #ffd6e5;
+    border-radius: 999px;
+
+    z-index: 1000;
+}
+
+.cute-nav a {
+    text-decoration: none;
+    color: #5e4b56;
+    transition: .3s;
+}
+
+.cute-nav a:hover {
+    color: #e98aaf;
+    transform: translateY(-2px);
+}
+
+#about {
+    max-width: 900px;
+    margin: auto;
+    padding: 80px 30px;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #e98aaf;
+    margin-bottom: 30px;
+}
+
+.list-card {
+    background: #fffaf7;
+    border: 2px solid #a8c9a0;
+    border-radius: 25px;
+    padding: 25px;
+    margin-top: 25px;
+    box-shadow: 6px 6px 0 #ffd6e5;
+}
+
+.cute-list {
+    padding-left: 25px;
+}
+
+.cute-list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
